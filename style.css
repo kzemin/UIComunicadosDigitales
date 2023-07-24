@@ -13,6 +13,7 @@
     --main-color-dark: #3651d4;
     --main-color-light: #5872f5;
     --text-color: #cfcde7;
+    --gray: #ebebeb;
 }
 
 body {
@@ -23,6 +24,8 @@ body {
     display: flex;
     position: relative;
 }
+
+/* SIDEBAR */
 
 a {
     text-decoration: none;
@@ -271,7 +274,7 @@ nav:hover .shrink-btn, .shrink-btn.hovered {
     color: #fff;
 }
 
-/* when the menu shrinks */
+/* SHRINK OF MENU */
 
 .hide {
     transition: opacity 0.3s;
@@ -302,15 +305,15 @@ body.shrink .admin-profile {
     transition: opacity 0.3s 0s, max-width 0.7s 0s ease-in-out;
 }
 
+/* HOME BUTTONS */
+
 .actions {
     display: flex;
     flex-direction: column;
     width: 10rem;
 }
 
-
-/* CSS */
-.action-btn {
+.action-btn, .feed-title-btn {
   appearance: button;
   backface-visibility: hidden;
   background-color: var(--main-color);
@@ -339,10 +342,88 @@ body.shrink .admin-profile {
   width: 100%;
 }
 
-.action-btn:disabled {
+.action-btn:disabled, .feed-title-btn:disabled {
   cursor: default;
 }
 
-.action-btn:focus {
+.action-btn:focus, .feed-title-btn:focus {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feed-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: var(--gray);
+    border-radius: 6px;
+    margin: 12px 0 0;
+    padding-bottom: 2rem;
+}
+
+.feed-container h2 {
+    margin: 10px;
+}
+
+.feed-title {
+    width: 95%;
+}
+
+.divisor-line {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.feed-title-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.feed-title-btn {
+  font-size: 0.8rem;
+  height: 34px;
+  width: 9rem;
+  margin: 10px 0;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-bottom: 2.2rem;
+}
+
+.message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: gray;
+    margin-left: 10px;
+}
+
+.message-container {
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.message-container .date {
+    font-size: 0.85rem;
+    font-weight: 300;
+    padding-top: 0.2rem;
+}
+
+.message-container .message-text {
+    font-size: 0.95rem;
+    padding-top: 0.4rem;
+    font-weight: 400;
 }
