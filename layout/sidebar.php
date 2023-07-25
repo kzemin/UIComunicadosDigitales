@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunicados Digitales</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -22,9 +22,11 @@
 
         <div class="sidebar-links">
             <ul>
-                <div class="active-tab">
+
+                <!-- fondo gris en link seleccionado -->
+                <div class="active-tab"></div>
                 <li>
-                    <a href="#" class="active" data-active="0">
+                    <a href="./index.php" class="active" data-active="0">
                         <div class="icon">
                             <i class='bx bx-home'></i>
                             <i class='bx bxs-home'></i>
@@ -33,7 +35,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" data-active="1">
+                    <a href="./events.php" data-active="1">
                         <div class="icon">
                             <i class='bx bx-calendar'></i>
                             <i class='bx bxs-calendar'></i>
@@ -42,7 +44,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" data-active="3">
+                    <a href="#" data-active="2">
                         <div class="icon">
                             <i class='bx bx-conversation'></i>
                             <i class='bx bxs-conversation'></i>
@@ -51,7 +53,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" data-active="2">
+                    <a href="#" data-active="3">
                         <div class="icon">
                             <i class='bx bx-help-circle'></i>
                             <i class='bx bxs-help-circle'></i>
@@ -83,58 +85,3 @@
     <!-- FEED -->
 
     <main>
-       <h1>Bienvenido, Walter</h1>
-       <!-- <p class="text">Texto de ejemplo...</p> -->
-
-       <div class="home">
-             <div class="actions">
-                 <button class="action-btn" role="button">Subir archivos SQL</button>
-
-                 <button class="action-btn" role="button">Buscar por alumno</button>
-
-                 <button class="action-btn" role="button">Apercibimientos</button>
-
-                 <button class="action-btn" role="button">Inasistencias</button>
-             </div>
-
-            <div class="feed-container">
-                <div class="feed-title">
-                    <div class="feed-title-row">
-                         <h2>Comunicados</h2>
-                         <button class="feed-title-btn" role="button">Enviar mensaje</button>
-                    </div>
-
-                    <div class="divisor-line"></div>
-
-                    <div class="message">
-                        <img src="./img/logo.png" alt="">
-                        <div class="message-container">
-                                <h3>Alvaro Gimenez</h3>
-                                <p class="date">14 Sep 15:28</p>
-
-                           <p class="message-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi dolor iure similique in rerum nemo aspernatur provident? Praesentium odio quidem eius voluptates sint adipisci officia, nesciunt eos laudantium harum?</p>
-                        </div>
-                    </div>
-
-                    <div class="message">
-                        <img src="./img/logo.png" alt="">
-                        <div class="message-container">
-                                <h3>Alvaro Gimenez</h3>
-                                <p class="date">14 Sep 15:28</p>
-
-                           <p class="message-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi dolor iure similique in rerum nemo aspernatur provident? Praesentium odio quidem eius voluptates sint adipisci officia, nesciunt eos laudantium harum?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-       <p class="copyright">
-        &copy; 2023 - <span>Comunicados Digitales</span> Todos los derechos reservados
-    </p>
-    </main>
-
-    <script src="app.js"></script>
-</body>
-
-</html>
