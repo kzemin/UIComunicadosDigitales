@@ -427,3 +427,14 @@ body.shrink .admin-profile {
     padding-top: 0.4rem;
     font-weight: 400;
 }
+
+/* HELP */
+
+.help-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-container a {
+    margin-top: 1rem;
+}

@@ -3,7 +3,7 @@ const sidebar_links = document.querySelectorAll(".sidebar-links a");
 const active_tab = document.querySelector(".active-tab");
 
 let activeIndex; 
-
+console.log("Script loaded");
 shrink_btn.addEventListener("click", () => {
     document.body.classList.toggle("shrink");
     shrink_btn.classList.add("hovered");
@@ -20,6 +20,7 @@ function moveActiveTab() {
 };
 
 function changeLink() {
+  console.log("Link clicked");
     sidebar_links.forEach(sideLink => sideLink.classList.remove("active"));
     this.classList.add("active");
 
@@ -31,6 +32,7 @@ sidebar_links.forEach(link => link.addEventListener("click", changeLink));
 
 // New code to set the active tab based on the current page URL
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOMContentLoaded");
     const currentPage = window.location.pathname.split("/").pop();
     switch (currentPage) {
       case "index.php":
@@ -38,6 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
         break;
       case "events.php":
         activeIndex = 1;
+        break;
+      case "help.php":
+        activeIndex = 2;
         break;
       // Add more cases for other pages if needed
       default:

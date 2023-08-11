@@ -44,16 +44,18 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" data-active="2">
+                    <a href="mailto:contacto@comunicadosdigitales.com" data-active="2">
                         <div class="icon">
                             <i class='bx bx-conversation'></i>
                             <i class='bx bxs-conversation'></i>
                         </div>
-                        <span class="link hide">Enviar mensaje a la escuela</span>
+                        <span class="link hide">
+                            Enviar mensaje a la escuela
+                        </span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" data-active="3">
+                    <a href="./help.php" data-active="3">
                         <div class="icon">
                             <i class='bx bx-help-circle'></i>
                             <i class='bx bxs-help-circle'></i>
